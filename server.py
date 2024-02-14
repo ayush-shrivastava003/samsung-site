@@ -7,7 +7,7 @@ server = Flask(__name__)
 @server.route("/")
 def index(methods = ["GET", "POST"]):
     print(request.method)
-    if request.method == "POST":
+    if request.method == "POST": # fix this 🙏🙏🙏🙏
         print("going to play the sound located at:", sound_file)
         return
 
